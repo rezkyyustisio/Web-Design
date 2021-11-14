@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 4.9</title>
+</head>
+<body>
+	<center>
+		<canvas id="komputer" width="500" height="500"></canvas>
+	</center>
+
+	<script type="text/javascript">
+		var kr = document.getElementById("komputer");
+		var meja = kr.getContext("2d");
+		meja.beginPath();
+		meja.moveTo(50, 200);
+		meja.lineTo(400, 200);
+		meja.lineTo(350, 300);
+		meja.lineTo(0, 300);
+		meja.lineTo(50, 200);
+
+		meja.moveTo(0, 300);
+		meja.lineTo(0, 310);
+		meja.lineTo(360, 310);
+		meja.lineTo(410, 200);
+		meja.lineTo(400, 200);
+
+		meja.moveTo(0, 300);
+		meja.lineTo(0, 420);
+		meja.lineTo(10, 420);
+		meja.lineTo(10, 310);
+
+		meja.moveTo(360, 310);
+		meja.lineTo(360, 420);
+		meja.lineTo(350, 420);
+		meja.lineTo(350, 310);
+
+		meja.moveTo(50, 310);
+		meja.lineTo(50, 350);
+		meja.lineTo(60, 350);
+		meja.lineTo(60, 310);
+
+		meja.moveTo(400, 221);
+		meja.lineTo(400, 300);
+		meja.lineTo(410, 300);
+		meja.lineTo(410, 201);
+
+		meja.stroke();
+
+		var cpu = kr.getContext("2d");
+		cpu.beginPath();
+		cpu.moveTo(60, 160);
+		cpu.lineTo(60, 270);
+		cpu.lineTo(120, 270);
+		cpu.lineTo(120, 160);
+		cpu.lineTo(60, 160);
+		cpu.lineTo(70, 150);
+		cpu.lineTo(130, 150);
+		cpu.lineTo(130, 240);
+		cpu.lineTo(120, 270);
+
+		cpu.stroke();
+
+		var monitor = kr.getContext("2d");
+		monitor.beginPath();
+		monitor.moveTo(180, 170);
+		monitor.lineTo(180, 230);
+		monitor.lineTo(260, 230);
+		monitor.lineTo(260, 170);
+		monitor.lineTo(180, 170);
+
+		monitor.moveTo(190, 220);
+		monitor.lineTo(250, 220);
+		monitor.lineTo(250, 180);
+		monitor.lineTo(190, 180);
+		monitor.lineTo(190, 220);
+
+		monitor.moveTo(215, 230);
+		monitor.lineTo(215, 250);
+		monitor.lineTo(220, 250);
+		monitor.lineTo(220, 230);
+
+		monitor.moveTo(195, 240);
+		monitor.lineTo(245, 240);
+		monitor.lineTo(240, 260);
+		monitor.lineTo(200, 260);
+		monitor.lineTo(195, 240);
+
+		monitor.stroke();
+
+		var keyboard = kr.getContext("2d");
+		keyboard.beginPath();
+		keyboard.moveTo(180, 270);
+		keyboard.lineTo(260, 270);
+		keyboard.lineTo(260, 295);
+		keyboard.lineTo(180, 295);
+		keyboard.lineTo(180, 270);
+
+		keyboard.moveTo(185, 275);
+		keyboard.lineTo(230, 275);
+		keyboard.lineTo(230, 290);
+		keyboard.lineTo(185, 290);
+		keyboard.lineTo(185, 275);
+
+		keyboard.moveTo(240, 275);
+		keyboard.lineTo(255, 275);
+		keyboard.lineTo(255, 290);
+		keyboard.lineTo(240, 290);
+		keyboard.lineTo(240, 275);
+		keyboard.stroke();
+
+		var mouse = kr.getContext("2d");
+		mouse.beginPath();
+		mouse.moveTo(300, 230);
+		mouse.lineTo(350, 230);
+		mouse.lineTo(350, 270);
+		mouse.lineTo(300, 270);
+		mouse.lineTo(300, 230);
+
+		mouse.moveTo(320, 250);
+		mouse.lineTo(325, 245);
+		mouse.lineTo(330, 250);
+		mouse.lineTo(330, 260);
+		mouse.lineTo(325, 258);
+		mouse.lineTo(320, 260);
+		mouse.lineTo(320, 250);
+
+		mouse.stroke();
+	</script>
+</body>
+</html>

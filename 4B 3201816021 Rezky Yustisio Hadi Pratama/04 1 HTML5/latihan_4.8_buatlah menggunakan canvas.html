@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 4.8</title>
+</head>
+<body>
+	
+	<canvas id="Kubus" height="180"></canvas>
+	<canvas id="SegitigaLingkaran"></canvas>
+
+	<script type="text/javascript">
+		// Canvas kubus
+		var kb = document.getElementById("Kubus");
+		var kubus = kb.getContext("2d");
+		kubus.beginPath();
+		kubus.moveTo(100, 0);
+		kubus.lineTo(50, 50);
+		kubus.lineTo(200, 50);
+		kubus.lineTo(200, 120);
+		kubus.lineTo(100, 120);
+		kubus.lineTo(100, 0);
+		kubus.lineTo(250, 0);
+		kubus.lineTo(200, 50)
+		kubus.lineTo(250, 0);
+		kubus.lineTo(250, 120);
+		kubus.lineTo(200, 120);
+		kubus.lineTo(200, 170);
+		kubus.lineTo(250, 120);
+		kubus.lineTo(200, 170);
+		kubus.lineTo(50, 170);
+		kubus.lineTo(50, 50);
+		kubus.lineTo(50, 170);
+		kubus.lineTo(100, 120);
+		kubus.stroke();
+
+		// Canvas segitiga
+		var sl = document.getElementById("SegitigaLingkaran");
+		var segitiga = sl.getContext("2d");
+		var lingkaran = sl.getContext("2d");
+
+		segitiga.beginPath();
+		segitiga.moveTo(100, 0);
+		segitiga.lineTo(0, 200);
+
+		segitiga.moveTo(100, 0);
+		segitiga.lineTo(200, 200);
+		
+		segitiga.moveTo(25, 150);
+		segitiga.lineTo(175, 150);
+
+		segitiga.stroke();
+
+		lingkaran.beginPath();
+		lingkaran.arc(100, 103, 45, 0, 2*Math.PI);
+		lingkaran.stroke();
+	</script>
+</body>
+</html>

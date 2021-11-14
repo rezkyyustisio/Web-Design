@@ -1,0 +1,6 @@
+5 Tag Htm yang didapatkan:
+1. <table>
+2. <thead>
+3. <tbody>
+4. <tr>
+5. <td>

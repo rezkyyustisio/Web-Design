@@ -1,0 +1,27 @@
+<div id="pesan"><h1>Welcome</h1></div>
+
+<button id="tombolWarna" onclick="gantiWarna()">Hijau</button>
+
+<script type="text/javascript">
+	function gantiWarna()
+	{
+		var pesan = document.getElementById('pesan');
+		var button = document.getElementById('tombolWarna');
+
+		if(button.innerHTML == "Hijau")
+		{
+			pesan.style.cssText = "background-color: green;";
+			button.innerHTML="Merah";
+		} 
+		else if(button.innerHTML == "Merah")
+		{
+			pesan.style.cssText = "background-color: red;";
+		}
+	}
+</script>
+<!-- Rezky Yustisio Hadi Pratama / 3201816021 -->
+
+
+
+
+<!-- Rezky Yustisio Hadi Pratama / 3201816021 -->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 4.7</title>
+</head>
+<body>
+	<canvas id="Canvas1" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+
+	<script type="text/javascript">
+		var c = document.getElementById("Canvas1");
+		var ctx = c.getContext("2d");
+
+		// Create gradient
+		var grd = ctx.createLinearGradient(0, 0, 200, 0);
+		grd.addColorStop(0, "blue");
+		grd.addColorStop(1, "white");
+
+		// Fill with gradient
+		ctx.fillStyle = grd;
+		ctx.fillRect(10, 10, 150, 80);
+	</script>
+</body>
+</html>

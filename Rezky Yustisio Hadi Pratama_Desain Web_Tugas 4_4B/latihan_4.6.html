@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 4.6</title>
+</head>
+<body>
+	<canvas id="Canvas1" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+
+	<script type="text/javascript">
+		var c = document.getElementById("Canvas1");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(100, 50, 45, 0, 2*Math.PI);
+		ctx.stroke();
+	</script>
+</body>
+</html>

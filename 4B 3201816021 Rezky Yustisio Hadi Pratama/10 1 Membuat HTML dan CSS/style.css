@@ -1,0 +1,45 @@
+body {
+	background-color: darkcyan;
+	font-family: 'Roboto';
+	color: white;
+	margin: 0 0 0 0;
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.container p {
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+	margin-top: -20px;
+	margin-bottom: 50px;
+}
+
+.container .bahasa-pemrograman div {
+	width: 400px;
+	height: 200px;
+	float: left;
+	margin-left: 35px;
+	margin-bottom: 200px;
+}
+
+.container .bahasa-pemrograman h3 {
+	color: gold;
+	letter-spacing: 1.5px;
+}
+
+.container .bahasa-pemrograman img {
+	width: 100%;
+	height: 295px;
+	border-radius: 5px;
+}
+
+.container .bahasa-pemrograman img:hover {
+	transition: 0.3s;
+	box-shadow: 0px 2px 10px 1px #333;
+}
+
+/*Rezky Yustisio Hadi Pratama / 3201816021*/

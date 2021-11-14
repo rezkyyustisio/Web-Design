@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 3.2</title>
+</head>
+<body>
+	<h2>Form Pendataan</h2>
+	<form name="pendataan">
+		<table>
+			<tr>
+				<td>NIM</td>
+				<td><input type="text" name="nim" size="20" maxlength="8"></td>
+			</tr>
+			<tr>
+				<td>Nama Lengkap</td>
+				<td><input type="text" name="nama" size="40"></td>
+			</tr>
+
+			<!-- radio, checbox -->
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>
+					<input type="radio" name="gender" checked> Laki-laki
+					<input type="radio" name="gender"> Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td>Bidang</td>
+				<td>
+					<input type="checkbox" name="web" checked> Web <br>
+					<input type="checkbox" name="java"> Java
+				</td>
+			</tr>
+
+			<!-- select -->
+			<tr>
+				<td>Semester</td>
+				<td>
+					<select name="semester">
+						<option value="1">Satu</option>
+						<option value="2">Dua</option>
+						<option value="3">Tiga</option>
+						<option value="4">Empat</option>
+						<option value="5">Lima</option>
+						<option value="6">Enam</option>
+					</select>
+				</td>
+			</tr>
+			
+			<!-- textarea -->
+			<tr>
+				<td>Alamat</td>
+				<td>
+					<textarea name="alamat" rows="4" cols="40" placeholder="Masukan alamat disini"></textarea>
+				</td>
+			</tr>
+
+			<!-- submit Reset -->
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Kirim">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
